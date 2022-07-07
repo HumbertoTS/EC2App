@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/general"
+    tools:context="ec1app.activity.HomeActivity">
+
+    <ScrollView
+        android:id="@+id/scrollhome"
+        android:layout_width="411dp"
+        android:layout_height="865dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/containercabecera"
+                android:layout_width="wrap_content"
+                android:layout_height="1133dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:id="@+id/titlehome"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="110dp"
+                    android:layout_marginBottom="12dp"
+                    android:text="¡Hola User!"
+                    android:textAlignment="center"
+                    android:textColor="@color/design_default_color_primary_dark"
+                    android:textSize="32sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/pedido"
+                    app:layout_constraintEnd_toStartOf="@+id/fotoperfil"
+                    app:layout_constraintHorizontal_bias="0.7"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/pedido"
+                    android:layout_width="186dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="48dp"
+                    android:layout_marginTop="12dp"
+                    android:fontFamily="sans-serif-black"
+                    android:text="Comidas y Pedidos"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/titlehome" />
+
+                <ImageView
+                    android:id="@+id/fotoperfil"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="24dp"
+                    android:layout_marginBottom="12dp"
+                    android:src="@drawable/profile"
+                    app:layout_constraintBottom_toTopOf="@+id/home_inputLayout_buscar"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/titlehome"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.835" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/home_inputLayout_buscar"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="313dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/background_cajabusqueda"
+                    android:hint="@string/home_input_hint_cajabuscar"
+                    app:boxStrokeColor="#D3CACA"
+                    app:boxStrokeWidth="0dp"
+                    app:cornerRadius="25dp"
+                    app:errorEnabled="true"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.479"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/pedido"
+                    app:startIconDrawable="@drawable/search"
+                    app:startIconTint="@color/primary">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/home_input_buscar"
+                        android:layout_width="304dp"
+                        android:layout_height="wrap_content" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/containerbanner"
+                    android:layout_width="353dp"
+                    android:layout_height="154dp"
+                    android:layout_marginTop="24dp"
+                    android:background="@drawable/background_banner"
+                    android:paddingStart="20dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.534"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/home_inputLayout_buscar">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/buttoncompras"
+                        android:layout_width="105dp"
+                        android:layout_height="59dp"
+                        android:backgroundTint="#FF5722"
+                        android:clickable="true"
+                        android:padding="14dp"
+                        android:paddingStart="20dp"
+                        android:text="Comprar"
+                        android:textAllCaps="false"
+                        app:cornerRadius="20dp"
+                        app:layout_constraintEnd_toEndOf="@+id/fechainfo"
+                        app:layout_constraintHorizontal_bias="1.0"
+                        app:layout_constraintStart_toStartOf="@+id/fechainfo"
+                        app:layout_constraintTop_toBottomOf="@+id/fechainfo"
+                        app:layout_constraintWidth_percent=".8"
+                        tools:ignore="TextContrastCheck" />
+
+                    <TextView
+                        android:id="@+id/deliverytext"
+                        android:layout_width="164dp"
+                        android:layout_height="24dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="8dp"
+                        android:paddingStart="20dp"
+                        android:text="Delivery gratis"
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.939"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/fechainfo"
+                        android:layout_width="124dp"
+                        android:layout_height="22dp"
+                        android:layout_marginTop="4dp"
+                        android:paddingStart="20dp"
+                        android:text="7 Jul - 20 Jul"
+                        android:textSize="16sp"
+                        android:textStyle="normal"
+                        app:layout_constraintEnd_toEndOf="@+id/deliverytext"
+                        app:layout_constraintHorizontal_bias="0.54"
+                        app:layout_constraintStart_toStartOf="@+id/deliverytext"
+                        app:layout_constraintTop_toBottomOf="@+id/deliverytext"
+                        tools:textColor="#000000" />
+
+                    <ImageView
+                        android:id="@+id/bannerimg"
+                        android:layout_width="223dp"
+                        android:layout_height="164dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/deliverytext"
+                        app:layout_constraintHorizontal_bias="0.137"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/image_banner" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <TextView
+                    android:id="@+id/categoriatext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:text="Categoría"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.057"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/containerbanner" />
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="10dp"
+                    android:contentDescription="tomoko image"
+                    android:scaleType="centerCrop"
+                    app:layout_constraintBottom_toTopOf="@+id/populartext"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/categoriatext"
+                    app:layout_constraintVertical_bias="0.515"
+                    app:srcCompat="@drawable/logocomida" />
+
+                <TextView
+                    android:id="@+id/populartext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="Popular"
+                    android:textColor="#090909"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.045"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="5dp"
+                    android:contentDescription="tomoko image"
+                    android:scaleType="centerCrop"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/populartext"
+                    app:layout_constraintVertical_bias="0.049"
+                    app:srcCompat="@drawable/logocomida" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/coordinatorLayout"
+        android:layout_width="424dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.google.android.material.bottomappbar.BottomAppBar
+            android:id="@+id/botonappbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:backgroundTint="#F6F6F6"
+            app:fabCradleMargin="8dp"
+            app:fabCradleRoundedCornerRadius="50dp"
+            app:fabCradleVerticalOffset="60dp"></com.google.android.material.bottomappbar.BottomAppBar>
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="420dp"
+            android:layout_height="76dp">
+
+            <LinearLayout
+                android:id="@+id/casabtn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.2"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/home"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/home" />
+
+                <TextView
+                    android:id="@+id/casatext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Home"
+                    android:textAlignment="center"
+                    android:textColor="#676767"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/perfilbtn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.2"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/perfil"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/person" />
+
+                <TextView
+                    android:id="@+id/perfiltext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Perfil"
+                    android:textAlignment="center"
+                    android:textColor="#676767"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/salirbtn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.2"
+                android:orientation="vertical"
+                android:visibility="invisible" />
+
+            <LinearLayout
+                android:id="@+id/helpbtn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.2"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/chat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/chat" />
+
+                <TextView
+                    android:id="@+id/helptext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ayuda"
+                    android:textAlignment="center"
+                    android:textColor="#676767"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/settingbtn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.2"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/setting"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/engranaje" />
+
+                <TextView
+                    android:id="@+id/settingtext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Configuración"
+                    android:textAlignment="center"
+                    android:textColor="#676767"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/botonsalir"
+            android:layout_width="78dp"
+            android:layout_height="match_parent"
+            android:backgroundTint="#ff5e00"
+            android:elevation="3dp"
+            android:shape="rectangle"
+            app:backgroundTint="#ff5e00"
+            app:cornerRadius="40dp"
+            app:icon="@drawable/salir"
+            app:layout_anchor="@+id/linearLayout"
+            app:layout_anchorGravity="center"
+            app:startIconDrawable="@drawable/salir"
+            tools:ignore="SpeakableTextPresentCheck">
+
+        </Button>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

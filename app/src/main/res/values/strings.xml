@@ -1,0 +1,39 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <string name="app_name">Comida Rapida App</string>
+    <string name="title">Fast Food App</string>
+    <string name="slogan">Hola, para disfrutar de una maravillosa experiencia, por favor, inicia sesión:</string>
+    //REGISTRO
+    <string name="register_app_name">Cliente Nuevo</string>
+    <string name="register_title">Registro</string>
+    <string name="register_dni_input_hint">DNI</string>
+    <string name="register_dni_input_content_description_end_icon">DNI</string>
+    <string name="register_button_dni">Buscar DNI</string>
+    <string name="register_fullName_input_hint">Nombres</string>
+    <string name="register_fullName_input_content_description_end_icon">Nombres</string>
+    <string name="register_nickname_input_hint">Apellidos</string>
+    <string name="register_nickname_input_content_description_end_icon">Apellidos</string>
+    <string name="register_phoneNumber_input_hint">Teléfono</string>
+    <string name="register_phoneNumber_input_content_description_end_icon">Teléfonor</string>
+    <string name="register_adress_input_hint">Dirección</string>
+    <string name="register_adress_input_content_description_end_icon">Dirección</string>
+    <string name="register_date_input_hint">Fecha de Nacimiento</string>
+    <string name="register_date_input_content_description_end_icon">Fecha de Nacimiento</string>
+    <string name="register_email_input_hint">E-mail</string>
+    <string name="register_email_input_content_description_end_icon">email</string>
+    <string name="register_password_input_hint">Contraseña</string>
+    <string name="register_password_input_content_description_end_icon">Password</string>
+    <string name="register_button">Registrar</string>
+
+    //LOGIN
+    <string name="login_app_name">¡Bienvenido!</string>
+    <string name="login_title">Iniciar Sesión</string>
+    <string name="login_email_input_hint">E-mail</string>
+    <string name="login_email_input_content_description_end_icon">email</string>
+    <string name="login_password_input_hint">Contraseña</string>
+    <string name="login_password_input_content_description_end_icon">Password</string>
+
+    //HOMEACTIVITY
+    <string name="home_input_hint_cajabuscar">Ingrese nombre del producto</string>
+    <string name="title_activity_maps">MapsActivity</string>
+
+</resources>

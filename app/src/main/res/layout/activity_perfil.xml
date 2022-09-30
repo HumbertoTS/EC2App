@@ -1,0 +1,542 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ec1app.activity.PerfilActivity">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/toolbar_custom"
+        app:layout_constraintStart_toEndOf="parent"
+        tools:layout_editor_absoluteY="-9dp" />
+
+    <ImageView
+        android:id="@+id/iconperfil"
+        android:layout_width="62dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="50dp"
+        android:src="@drawable/ic_baseline_person_white"
+        app:layout_constraintBottom_toBottomOf="@+id/include"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/include"
+        app:layout_constraintVertical_bias="0.56"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/titleperfil"
+        android:layout_width="218dp"
+        android:layout_height="51dp"
+        android:gravity="center"
+        android:text="Perfil de Usuario"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/include"
+        app:layout_constraintEnd_toEndOf="@+id/include"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.608" />
+
+
+    <ScrollView
+        android:id="@+id/scrollviewperfil"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="@+id/coordinatorLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include"
+        tools:ignore="SpeakableTextPresentCheck">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/imageperfilcart"
+                android:layout_width="199dp"
+                android:layout_height="166dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="80dp"
+                android:elevation="8dp"
+                app:cardCornerRadius="25dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/perfile_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/profile" />
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/changeimagen"
+                android:layout_width="204dp"
+                android:layout_height="46dp"
+                android:layout_gravity="center"
+                android:layout_margin="20dp"
+                android:layout_marginTop="20dp"
+                android:padding="3dp"
+                android:text="Cambiar Foto"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.48"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageperfilcart"
+                tools:ignore="MissingConstraints,TouchTargetSizeCheck" />
+
+            <View
+                android:id="@+id/separe1"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginTop="16dp"
+                android:background="@color/black"
+                app:layout_constraintTop_toBottomOf="@+id/change_imagen"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="0dp" />
+
+            <LinearLayout
+                android:id="@+id/contenernombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                app:layout_constraintTop_toBottomOf="@+id/separe1"
+                tools:layout_editor_absoluteX="0dp">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_baseline_person_24" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="Nombres:"
+                    android:textColor="@android:color/black"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:text="Mickey"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/separe2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"
+                app:layout_constraintBottom_toBottomOf="@+id/contenernombre"
+                tools:ignore="MissingConstraints" />
+
+            <LinearLayout
+                android:id="@+id/contenerapellido"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                app:layout_constraintTop_toBottomOf="@+id/contenernombre"
+                tools:layout_editor_absoluteX="0dp">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_baseline_person_24" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="Apellidos:"
+                    android:textColor="@android:color/black"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="39dp"
+                    android:text="Vargas Rodriguez"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/separe3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"
+                app:layout_constraintBottom_toBottomOf="@+id/contenerapellido"
+                tools:ignore="MissingConstraints" />
+
+            <LinearLayout
+                android:id="@+id/contenerdireccion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                app:layout_constraintTop_toBottomOf="@+id/contenerapellido"
+                tools:layout_editor_absoluteX="0dp">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_baseline_location_on" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="Direccion:"
+                    android:textColor="@android:color/black"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="39dp"
+                    android:text="Av. Las Flores 265"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/separe4"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"
+                app:layout_constraintBottom_toBottomOf="@+id/contenerdireccion"
+                tools:ignore="MissingConstraints" />
+
+
+            <LinearLayout
+                android:id="@+id/contenerfechanac"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                app:layout_constraintTop_toBottomOf="@+id/contenerdireccion"
+                tools:layout_editor_absoluteX="0dp">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_baseline_date_range" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="Fecha Nac.:"
+                    android:textColor="@android:color/black"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:text="25/01/1993"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/separe5"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"
+                tools:ignore="MissingConstraints" />
+
+            <LinearLayout
+                android:id="@+id/conteneremail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                app:layout_constraintTop_toBottomOf="@+id/contenerfechanac"
+                tools:layout_editor_absoluteX="0dp">
+
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_baseline_email_24" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="E-mail:"
+                    android:textColor="@android:color/black"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="62dp"
+                    android:text="mickey@gmail.com"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/separe6"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"
+                app:layout_constraintBottom_toBottomOf="@+id/conteneremail"
+                tools:ignore="MissingConstraints" />
+
+            <LinearLayout
+                android:id="@+id/editperfile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@+id/conteneremail"
+                tools:layout_editor_absoluteX="0dp">
+
+                <TextView
+                    android:id="@+id/txteditperfile"
+                    android:layout_width="180dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="-10dp"
+                    android:background="@drawable/btn_perfile"
+                    android:drawableLeft="@drawable/ic_baseline_edit_24"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:text="Editar Perfil"
+                    android:textColor="@color/black"
+                    android:textSize="18dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/editpasswors"
+                android:layout_width="match_parent"
+                android:layout_height="53dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@+id/editperfile"
+                tools:layout_editor_absoluteX="0dp">
+
+                <TextView
+                    android:id="@+id/txteditpassword"
+                    android:layout_width="180dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="-10dp"
+                    android:background="@drawable/btn_perfile"
+                    android:drawableLeft="@drawable/ic_baseline_lock_24"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:text="Cambiar contraseña"
+                    android:textColor="@color/black"
+                    android:textSize="18dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/passwordchange"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@+id/editpasswors"
+                tools:layout_editor_absoluteX="0dp">
+
+                <TextView
+                    android:id="@+id/txtghost"
+                    android:layout_width="180dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="-10dp"
+                    android:text="Cambiar contraseña"
+                    android:textColor="@color/white"
+                    android:textSize="18dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/coordinatorLayout"
+        android:layout_width="415dp"
+        android:layout_height="97dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.google.android.material.bottomappbar.BottomAppBar
+            android:id="@+id/botonappbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:backgroundTint="#F6F6F6"
+            app:fabCradleMargin="8dp"
+            app:fabCradleRoundedCornerRadius="50dp"
+            app:fabCradleVerticalOffset="6dp"
+            app:layout_anchor="@+id/botonappbar"
+            app:layout_anchorGravity="bottom|center">
+
+            <LinearLayout
+                android:id="@+id/contenedornavegation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/casabtn"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/homebtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/ic_baseline_home_24" />
+
+                    <TextView
+                        android:id="@+id/casatext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Home"
+                        android:textAlignment="center"
+                        android:textColor="#676767"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/perfilbtn"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/perfil"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/ic_baseline_person" />
+
+                    <TextView
+                        android:id="@+id/perfiltext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Perfil"
+                        android:textAlignment="center"
+                        android:textColor="#676767"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/carritobtn"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
+                    android:orientation="vertical"
+                    android:visibility="invisible" />
+
+                <LinearLayout
+                    android:id="@+id/helpbtn"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/chat"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/ic_baseline_location_on_24" />
+
+                    <TextView
+                        android:id="@+id/helptext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Ubícanos"
+                        android:textAlignment="center"
+                        android:textColor="#676767"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/exittbtn"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/exittext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/ic_baseline_exit_to_app" />
+
+                    <TextView
+                        android:id="@+id/salirtext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Salir"
+                        android:textAlignment="center"
+                        android:textColor="#676767"
+                        android:textSize="13sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </com.google.android.material.bottomappbar.BottomAppBar>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/deliverycartbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:backgroundTint="#ff5e00"
+            android:elevation="3dp"
+            android:foregroundTint="#FFFCFC"
+            android:src="@drawable/shopping_cart"
+            app:backgroundTint="#ff5e00"
+            app:layout_anchor="@id/botonappbar"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

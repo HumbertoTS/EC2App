@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ec1app.activity.LocalActivity">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/toolbar_custom"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/abrilfatface_normal"
+        android:text="Ubicación"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/localscroll"
+        android:layout_width="411dp"
+        android:layout_height="744dp"
+        android:layout_marginBottom="150dp"
+        app:layout_constraintBottom_toTopOf="@+id/coordinatorLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include">
+
+        <LinearLayout
+            android:id="@+id/contenedortitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="90dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="90dp"
+                    android:text="Ubicación del Local"
+                    android:textColor="@color/black"
+                    android:textSize="35dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="267dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    app:srcCompat="@drawable/mapa" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="389dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView4">
+
+                <TextView
+                    android:id="@+id/direcciontxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="21dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/abrilfatface_normal"
+                    android:text="Dirección:"
+                    android:textColor="#373b54"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="389dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout1">
+
+
+                <TextView
+                    android:id="@+id/ubicaciontext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Av. Los Jardines 256"
+                    android:layout_marginStart="21dp"
+                    android:textColor="#373b54"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout3"
+                android:layout_width="389dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+
+                <TextView
+                    android:id="@+id/horariotxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="21dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/abrilfatface_normal"
+                    android:text="Horario de Atención:"
+                    android:textColor="#373b54"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout5"
+                android:layout_width="389dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
+
+
+                <TextView
+                    android:id="@+id/horatext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="21dp"
+                    android:text="Mart. - Dom. de 6 p.m a 11 p.m."
+                    android:textColor="#373b54"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout4"
+                android:layout_width="389dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout5">
+
+
+                <TextView
+                    android:id="@+id/fbtxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="21dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/abrilfatface_normal"
+                    android:text="Puedes visitar nuestra Fanpage:"
+                    android:textColor="#373b54"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linearLayout6"
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:orientation="horizontal"
+                app:layout_constraintStart_toEndOf="@+id/imageView6"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="55dp"
+                    android:layout_height="37dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="45dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout4"
+                    app:srcCompat="@drawable/logofb" />
+
+                <TextView
+                    android:id="@+id/hacetext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="21dp"
+                    android:text="Fast Food"
+                    android:textColor="#373b54"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/coordinatorLayout"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.google.android.material.bottomappbar.BottomAppBar
+            android:id="@+id/botonappbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:backgroundTint="#F6F6F6"
+            app:fabCradleMargin="8dp"
+            app:fabCradleRoundedCornerRadius="50dp"
+            app:fabCradleVerticalOffset="6dp">
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/casabtn"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/homebtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/ic_baseline_home_24" />
+
+                    <TextView
+                        android:id="@+id/casatext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Home"
+                        android:textAlignment="center"
+                        android:textColor="#676767"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/perfilbtn"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/perfil"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/ic_baseline_person" />
+
+                    <TextView
+                        android:id="@+id/perfiltext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Perfil"
+                        android:textAlignment="center"
+                        android:textColor="#676767"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/carritobtn"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
+                    android:orientation="vertical"
+                    android:visibility="invisible" />
+
+                <LinearLayout
+                    android:id="@+id/helpbtn"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/chat"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/ic_baseline_location_on_24" />
+
+                    <TextView
+                        android:id="@+id/helptext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Ubícanos"
+                        android:textAlignment="center"
+                        android:textColor="#676767"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/exittbtn"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/exittext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/ic_baseline_exit_to_app" />
+
+                    <TextView
+                        android:id="@+id/salirtext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Salir"
+                        android:textAlignment="center"
+                        android:textColor="#676767"
+                        android:textSize="13sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </com.google.android.material.bottomappbar.BottomAppBar>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/deliverycartbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:backgroundTint="#ff5e00"
+            android:elevation="3dp"
+            android:foregroundTint="#FFFCFC"
+            android:src="@drawable/shopping_cart"
+            app:backgroundTint="#ff5e00"
+            app:layout_anchor="@id/botonappbar"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

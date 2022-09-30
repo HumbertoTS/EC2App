@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Ronny/AndroidStudioProjects/EC1App/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1945" />
+        <entry key="..\:/Users/Ronny/AndroidStudioProjects/EC1App/app/src/main/res/drawable/background_banner.xml" value="0.2085" />
+        <entry key="..\:/Users/Ronny/AndroidStudioProjects/EC1App/app/src/main/res/drawable/background_cajabusqueda.xml" value="0.2065" />
+        <entry key="..\:/Users/Ronny/AndroidStudioProjects/EC1App/app/src/main/res/drawable/background_splashscreen.xml" value="0.14" />
+        <entry key="..\:/Users/Ronny/AndroidStudioProjects/EC1App/app/src/main/res/drawable/foreground.xml" value="0.1945" />
+        <entry key="..\:/Users/Ronny/AndroidStudioProjects/EC1App/app/src/main/res/drawable/home-48px.xml" value="0.3675" />
+        <entry key="..\:/Users/Ronny/AndroidStudioProjects/EC1App/app/src/main/res/layout/activity_home.xml" value="0.22" />
+        <entry key="..\:/Users/Ronny/AndroidStudioProjects/EC1App/app/src/main/res/layout/activity_login.xml" value="0.25" />
+        <entry key="..\:/Users/Ronny/AndroidStudioProjects/EC1App/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Users/Ronny/AndroidStudioProjects/EC1App/app/src/main/res/layout/activity_register.xml" value="0.25" />
+        <entry key="..\:/Users/Ronny/AndroidStudioProjects/EC2App/app/src/main/res/drawable-v24/btn_style.xml" value="0.2075" />
+        <entry key="..\:/Users/Ronny/AndroidStudioProjects/EC2App/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.158" />
+        <entry key="..\:/Users/Ronny/AndroidStudioProjects/EC2App/app/src/main/res/drawable/background_banner.xml" value="0.158" />
+        <entry key="..\:/Users/Ronny/AndroidStudioProjects/EC2App/app/src/main/res/drawable/background_cajabusqueda.xml" value="0.158" />
+        <entry key="..\:/Users/Ronny/AndroidStudioProjects/EC2App/app/src/main/res/drawable/background_splashscreen.xml" value="0.2905" />
+        <entry key="..\:/Users/Ronny/AndroidStudioProjects/EC2App/app/src/main/res/drawable/btn_perfile.xml" value="0.1695" />
+        <entry key="..\:/Users/Ronny/AndroidStudioProjects/EC2App/app/src/main/res/drawable/carrito_item.xml" value="0.1" />
+        <entry key="..\:/Users/Ronny/AndroidStudioProjects/EC2App/app/src/main/res/drawable/cat_background.xml" value="0.2065" />
+        <entry key="..\:/Users/Ronny/AndroidStudioProjects/EC2App/app/src/main/res/drawable/cat_borde.xml" value="0.2075" />
+        <entry key="..\:/Users/Ronny/AndroidStudioProjects/EC2App/app/src/main/res/drawable/cat_borde1.xml" value="0.2075" />
+        <entry key="..\:/Users/Ronny/AndroidStudioProjects/EC2App/app/src/main/res/drawable/cat_borde2.xml" value="0.2075" />
+        <entry key="..\:/Users/Ronny/AndroidStudioProjects/EC2App/app/src/main/res/drawable/foreground.xml" value="0.158" />
+        <entry key="..\:/Users/Ronny/AndroidStudioProjects/EC2App/app/src/main/res/drawable/ic_baseline_date_range.xml" value="0.1515" />
+        <entry key="..\:/Users/Ronny/AndroidStudioProjects/EC2App/app/src/main/res/drawable/ic_baseline_edit_24.xml" value="0.1695" />
+        <entry key="..\:/Users/Ronny/AndroidStudioProjects/EC2App/app/src/main/res/drawable/ic_baseline_email_24.xml" value="0.1515" />
+        <entry key="..\:/Users/Ronny/AndroidStudioProjects/EC2App/app/src/main/res/drawable/ic_baseline_exit_to_app.xml" value="0.2075" />
+        <entry key="..\:/Users/Ronny/AndroidStudioProjects/EC2App/app/src/main/res/drawable/ic_baseline_home_24.xml" value="0.2075" />
+        <entry key="..\:/Users/Ronny/AndroidStudioProjects/EC2App/app/src/main/res/drawable/ic_baseline_location_on.xml" value="0.1515" />
+        <entry key="..\:/Users/Ronny/AndroidStudioProjects/EC2App/app/src/main/res/drawable/ic_baseline_lock_24.xml" value="0.1515" />
+        <entry key="..\:/Users/Ronny/AndroidStudioProjects/EC2App/app/src/main/res/drawable/ic_baseline_message.xml" value="0.2075" />
+        <entry key="..\:/Users/Ronny/AndroidStudioProjects/EC2App/app/src/main/res/drawable/ic_baseline_person.xml" value="0.2075" />
+        <entry key="..\:/Users/Ronny/AndroidStudioProjects/EC2App/app/src/main/res/drawable/ic_baseline_person_24.xml" value="0.2075" />
+        <entry key="..\:/Users/Ronny/AndroidStudioProjects/EC2App/app/src/main/res/drawable/ic_baseline_person_pin_24.xml" value="0.2075" />
+        <entry key="..\:/Users/Ronny/AndroidStudioProjects/EC2App/app/src/main/res/drawable/ic_baseline_person_white.xml" value="0.1685" />
+        <entry key="..\:/Users/Ronny/AndroidStudioProjects/EC2App/app/src/main/res/drawable/ic_baseline_phone_24.xml" value="0.1515" />
+        <entry key="..\:/Users/Ronny/AndroidStudioProjects/EC2App/app/src/main/res/drawable/orangebtn.xml" value="0.2075" />
+        <entry key="..\:/Users/Ronny/AndroidStudioProjects/EC2App/app/src/main/res/drawable/productos_item.xml" value="0.2065" />
+        <entry key="..\:/Users/Ronny/AndroidStudioProjects/EC2App/app/src/main/res/layout/activity_carrito.xml" value="0.1" />
+        <entry key="..\:/Users/Ronny/AndroidStudioProjects/EC2App/app/src/main/res/layout/activity_delivery.xml" value="0.33" />
+        <entry key="..\:/Users/Ronny/AndroidStudioProjects/EC2App/app/src/main/res/layout/activity_detalle_pedido.xml" value="0.2" />
+        <entry key="..\:/Users/Ronny/AndroidStudioProjects/EC2App/app/src/main/res/layout/activity_detallepedido.xml" value="0.33" />
+        <entry key="..\:/Users/Ronny/AndroidStudioProjects/EC2App/app/src/main/res/layout/activity_home.xml" value="0.33" />
+        <entry key="..\:/Users/Ronny/AndroidStudioProjects/EC2App/app/src/main/res/layout/activity_local.xml" value="0.25280898876404495" />
+        <entry key="..\:/Users/Ronny/AndroidStudioProjects/EC2App/app/src/main/res/layout/activity_login.xml" value="0.2" />
+        <entry key="..\:/Users/Ronny/AndroidStudioProjects/EC2App/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Users/Ronny/AndroidStudioProjects/EC2App/app/src/main/res/layout/activity_paypal.xml" value="0.16417272338606242" />
+        <entry key="..\:/Users/Ronny/AndroidStudioProjects/EC2App/app/src/main/res/layout/activity_perfil.xml" value="0.2" />
+        <entry key="..\:/Users/Ronny/AndroidStudioProjects/EC2App/app/src/main/res/layout/activity_register.xml" value="0.2" />
+        <entry key="..\:/Users/Ronny/AndroidStudioProjects/EC2App/app/src/main/res/layout/activity_userperfile.xml" value="0.33" />
+        <entry key="..\:/Users/Ronny/AndroidStudioProjects/EC2App/app/src/main/res/layout/carrito_item.xml" value="0.33" />
+        <entry key="..\:/Users/Ronny/AndroidStudioProjects/EC2App/app/src/main/res/layout/categoria_item.xml" value="0.67" />
+        <entry key="..\:/Users/Ronny/AndroidStudioProjects/EC2App/app/src/main/res/layout/fragment_maps.xml" value="0.23262279888785914" />
+        <entry key="..\:/Users/Ronny/AndroidStudioProjects/EC2App/app/src/main/res/layout/fragmet_cat.xml" value="0.19" />
+        <entry key="..\:/Users/Ronny/AndroidStudioProjects/EC2App/app/src/main/res/layout/producto_item.xml" value="0.5" />
+        <entry key="..\:/Users/Ronny/AndroidStudioProjects/EC2App/app/src/main/res/layout/toolbar2_custom.xml" value="0.16417272338606242" />
+        <entry key="..\:/Users/Ronny/AndroidStudioProjects/EC2App/app/src/main/res/layout/toolbar_custom.xml" value="0.3009833262077811" />
+        <entry key="..\:/Users/Ronny/AndroidStudioProjects/EC2App/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.2165" />
+        <entry key="..\:/Users/Ronny/AndroidStudioProjects/EC2App/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.158" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.1" />
+      </ProjectState>
+    </option>
+  </component>
+</project>
